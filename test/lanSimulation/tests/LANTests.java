@@ -195,6 +195,7 @@ public class LANTests {
 	@Test(expected = AssertionError.class)
 	public void testPreconditionViolation() {
 		Network network = Network.DefaultExample();
+		System.out.println();
 		StringWriter report = new StringWriter(100);
 		network.requestWorkstationPrintsDocument("UnknownWorkstation",
 				"does not matter", "does not matter", report);
