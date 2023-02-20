@@ -57,10 +57,7 @@ public class Node {
 	<p><strong>Precondition:</strong> (type >= NODE) & (type <= PRINTER);</p>
 	 */
 	public Node(byte type, String name) {
-		assert (type >= NODE) & (type <= PRINTER);
-		type_ = type;
-		name_ = name;
-		nextNode_ = null;
+		this(type,name,null);
 	}
 
 	/**
